@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#terminal {
+    width: 100%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+#header {
+    color: blue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#messages {
+    border: 1px solid green;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: green;
+}
+
+.message.received .status {
+    color: red;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+}
+
+#input .cursor {
+    color: green;
+    margin-right: 5px;
+}
+
+#messageInput {
+    flex-grow: 1;
+    background-color: black;
+    border: none;
+    color: green;
+    outline: none;
+}
+
+#pseudonym {
+    background-color: black;
+    border: none;
+    color: green;
+    outline: none;
+}
+
+button {
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+}
