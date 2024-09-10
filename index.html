@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypted [USER1] & [USER2]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="terminal">
+        <div id="welcome">
+            <h1>Welcome to Encrypted Chat</h1>
+            <p>Please enter your pseudonym:</p>
+            <input type="text" id="pseudonym" placeholder="Pseudonym...">
+            <button onclick="setPseudonym()">Enter</button>
+        </div>
+        <div id="chat" class="hidden">
+            <div id="header">Encrypted Chat - [USER1] & [USER2]</div>
+            <div id="messages"></div>
+            <div id="input">
+                <span class="cursor">&gt;</span>
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
