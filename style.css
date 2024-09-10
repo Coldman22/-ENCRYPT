@@ -3,8 +3,9 @@ body {
     height: 100vh;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
-    color: green;
+    color: blue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -12,6 +13,9 @@ body {
 #terminal {
     width: 100%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hidden {
@@ -19,17 +23,20 @@ body {
 }
 
 #header {
-    color: blue;
+    color: red;
     margin-bottom: 10px;
     text-align: center;
 }
 
 #messages {
-    border: 1px solid green;
+    border: 1px solid blue;
     padding: 10px;
     height: 300px;
     overflow-y: auto;
     margin-bottom: 10px;
+    color: green;
+    width: 100%;
+    max-width: 600px;
 }
 
 .message {
@@ -43,10 +50,12 @@ body {
 #input {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 600px;
 }
 
 #input .cursor {
-    color: green;
+    color: blue;
     margin-right: 5px;
 }
 
@@ -56,24 +65,26 @@ body {
     border: none;
     color: green;
     outline: none;
+    padding: 5px;
 }
 
 #pseudonym {
     background-color: black;
     border: none;
-    color: green;
+    color: blue;
     outline: none;
+    padding: 5px;
 }
 
 button {
     background-color: black;
-    border: 1px solid green;
-    color: green;
+    border: 1px solid blue;
+    color: blue;
     padding: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: green;
+    background-color: blue;
     color: black;
 }
